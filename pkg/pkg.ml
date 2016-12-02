@@ -4,7 +4,7 @@
 open Topkg
 
 let () =
-  Pkg.describe "upperbound-constrainer" @@ fun c ->
+  Pkg.describe "opam-lint-remover" @@ fun c ->
   Ok [ 
-       Pkg.bin "src/main" ~dst:"constrain"
+       Pkg.bin "src/main" ~dst:"delint"
   ]

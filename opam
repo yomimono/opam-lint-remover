@@ -13,4 +13,7 @@ depends: [
   "ocamlbuild" {build}
   "opam-file-format"
   "cmdliner"
+  "bos"
+  "fpath"
+  "rresult"
 ]

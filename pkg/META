@@ -1,6 +1,6 @@
-description = "add upper bound constraints to dependencies in opam files"
+description = "attempt to automatically resolve opam lint errors"
 version = "%%VERSION_NUM%%"
-requires = "unix opam-file-format cmdliner"
+requires = "bos fpath rresult opam-file-format cmdliner"
 archive(byte) = "upperbound-constrainer.cma"
 archive(native) = "upperbound-constrainer.cmxa"
 plugin(byte) = "upperbound-constrainer.cma"
