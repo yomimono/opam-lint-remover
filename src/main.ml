@@ -124,7 +124,7 @@ let fix_problems package version repo =
     (* are there newer opam files we can consult? *)
     match Repo_search.find_newer package version repo with
     | [] ->
-      Format.eprintf "%s version %s had errors %s, but there are no newer opam files to consult" package version (String.concat " " errs);
+      Format.eprintf "%s version %s had errors %s, but there are no newer opam files to consult\n" package version (String.concat " " errs);
       `Error
     | newer_versions ->
       let closest err = List.find (fun version -> Repo_search.fixes_err err package version repo) newer_versions in
